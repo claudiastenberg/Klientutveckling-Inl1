@@ -1,8 +1,8 @@
 
 //Öppnar hela API Open weather
 const KEY = '8ff603c12689a43d63185805ba36edca';
-const API_URL = 'http://api.openweathermap.org/data/2.5/forecast?q=nynashamn&appid='
-+ KEY;
+const API_URL = 'https://api.openweathermap.org/data/2.5/forecast?q=nynashamn&appid='
++ KEY; /* lagt till https*/
 function HttpGet(url) { //Här får vi http adressen. Object som håller ajax objektet åt mig
     this.url=url;
     this.ajax = new XMLHttpRequest();
