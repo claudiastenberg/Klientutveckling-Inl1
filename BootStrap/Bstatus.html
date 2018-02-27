@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nicksta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesB/generalB.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/darkly/bootstrap.min.css">
+</head>
+<body class="pb-5 bg-light">
+    <header class= "Header" onload="weather()"><h1>Nickstabadet</h1>
+    <p>Ett soligt sommarbad</p>
+    </header>
+    
+  <nav class="bg-white">
+        <div class= "nav">
+              <a class="nav-link active" href="Bindex.html">Hem</a>
+              <a class="nav-link" href="Bcontact.html">Kontakt</a>
+              <a  class="nav-link" href="Bstatus.html">Väder</a>
+              <a class="nav-link disable" href="#Tillbaks">Tillbaks</a>
+        </div>
+    </nav>
+    <div class="container">
+     <div class="row justify-content-between">
+         <div class="col-7 card">
+            <div>
+             <header class="header">
+                 <h3>Åker tågen från?</h3>
+                    </header>
+                  <div class="form-group">
+    <label>Jag åker från...</label>
+    <input id="cityInput" type="Text" class="form-control" placeholder="City">
+    <button onclick="btnSkicka()" class="btn btn-primary mb-2">Skicka</button>
+  </div>
+                <table class="table table-striped">
+  <thead class="thead bg-info">
+    <tr>
+      <th scope="col">Nr</th>
+      <th scope="col">Avgår</th>
+        <th scope="col">Ankommer</th>
+    </tr>
+  </thead>
+  <tbody id="bodyAvg">
+  </tbody>
+</table>
+      <div id="fromCity">
+        
+      </div>
+             </div>
+              </div>
+         <div class="col-md-4 ml-md-auto card">
+             <header class="header">
+                 <h3>Vädret på Nicksta</h3>
+                    </header>
+                             <table class="table table-striped">
+  <thead class="tHead bg-info">
+    <tr>
+      <th scope="col">Klockan</th>
+      <th scope="col">Väder</th>
+        <th scope="col">Värme</th>
+        <th scope="col">Vind</th>
+    </tr>
+  </thead>
+  <tbody id="bodyWeather">
+    
+  </tbody>
+</table>
+             
+         </div> 
+          </div>
+        </div>
+    <hr>
+    <footer>
+    <div class="text-center">
+    Vill du veta med? skicka e-post till <a href="mailto:claudia.stenberg@gmail.com">claudia.stenberg@gmail.com</a>
+    </div>
+    </footer>
+    
+    
+<script src="Inlamning_1/Weather.js"></script> <!--Länk till javascripten-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
