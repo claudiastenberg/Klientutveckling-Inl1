@@ -1,0 +1,8 @@
+.Header{
+    background: URL("header-sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px 10px 30px;;
+    color: black;
+    
+}
